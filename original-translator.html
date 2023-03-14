@@ -1,0 +1,42 @@
+<html>
+<head>
+  <title>My page</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script>
+  	$(document).ready(function(){
+  		$("#normal").keyup(function(){
+  var words = $("#normal").val();
+words = words.replace(/hello/gi, "hi, big fan");
+words = words.replace(/33/gi, "all will be revealed on the last day");
+words = words.replace(/32/gi, "all will be revealed on the last day");
+words = words.replace(/democracy/gi, "big d word");
+words = words.replace(/dictatorship/gi, "big d word");
+words = words.replace(/^/, "Big fan, ");
+  $("#pirate").val(words);
+});
+	});
+  </script>
+  <style type="text/css">
+  textarea {
+    width: 400px;
+    height: 200px;
+    font-family: arial;
+  }
+</style>
+</head>
+<body>
+	<p>Hi! Welcome to The Mr Clayton Generator Version 2! In this version we have:</p>
+	<p>
+		<ul>
+  			<li>Censoring numbers like 33 and 32</li>
+  			<li>big fan at the start</li>
+  			<li>hello = hi big fan</li>
+			<li>democracy and dictatorship big d words</li>
+		</ul>
+	</p>
+	<h2>Normal</h2>
+	<textarea id="normal"></textarea>
+	<h2>Mr Clayton</h2>
+	<textarea id="pirate"></textarea>
+</body>
+</html>

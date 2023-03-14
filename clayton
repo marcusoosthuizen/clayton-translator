@@ -1,0 +1,2 @@
+#! /bin/bash  
+echo -n "Big fan, "; sed 's/hello/hi big fan/g; s/33/all will be revealed on the last day/g; s/32/all will be revealed on the last day/g; s/democracy/big d word/g; s/dictatorship/big d word/g;' <<< $@
